@@ -1,0 +1,13 @@
+# general
+.*
+
+# tex
+*.aux
+*.log
+*.out
+
+# certain files
+en-cv.pdf
+en-ref.pdf
+de-cv.pdf
+de-ref.pdf
