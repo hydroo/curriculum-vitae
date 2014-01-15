@@ -1,0 +1,33 @@
+\documentclass[10pt,a4paper]{article}
+
+\usepackage[top=3.2cm,bottom=3.2cm,left=3.2cm,right=3.2cm]{geometry}
+
+\usepackage{color}
+\definecolor{heading-rule}{rgb}{0.7, 0.7, 0.7}
+
+\usepackage{marginnote}
+\newcommand{\timespan}[1]{\marginnote{\scriptsize #1}}
+\reversemarginpar
+
+\usepackage{url}
+
+\usepackage{hyperref} % should be last usepackage to avoid errors.
+
+% don't indent paragraphs, and columns in tabulars
+\setlength\parindent{0em}
+\setlength\tabcolsep{0em}
+
+% make lists without bullets and compact spacing
+\renewenvironment{itemize}{
+	\begin{list}{}{
+		\setlength{\leftmargin}{0em}
+		\setlength{\itemsep}{0.25em}
+		\setlength{\parskip}{0pt}
+		\setlength{\parsep}{0.25em}}}
+	{\end{list}}
+
+
+\newcommand{\customhrule}{\vspace{0.2cm}\textcolor{heading-rule}\hrule\vspace{0.2cm}}
+
+\def\name{Ronny Brendel}
+
